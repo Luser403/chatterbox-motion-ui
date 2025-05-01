@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
 
-## Project info
+# Chatter - Real-Time Chat Application
 
-**URL**: https://lovable.dev/projects/5517a8b0-ae6d-49e1-87bd-4d545c61daf5
+A web-based real-time chat application built with React and Tailwind CSS, featuring a responsive UI and simulated messaging with local storage.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Modern, clean UI with a minimalist design and gradient accents
+- Fully responsive layout for mobile, tablet and desktop
+- Real-time message simulation with local storage persistence
+- 3D animated avatars and interactive message bubbles
+- Smooth transitions and animations for an engaging user experience
+- User status indicators (online, away, offline)
+- Message grouping by date and sender
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5517a8b0-ae6d-49e1-87bd-4d545c61daf5) and start prompting.
+- React 18
+- TypeScript
+- Tailwind CSS for styling
+- CSS animations and 3D transforms
+- Local storage for data persistence
+- Framer Motion for smooth animations
 
-Changes made via Lovable will be committed automatically to this repo.
+## Setup Instructions
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone this repository
+```bash
+git clone <repository-url>
+cd chatter
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```bash
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```bash
+npm start
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and navigate to `http://localhost:3000`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/         # React components
+│   ├── ChatApp.tsx     # Main application component
+│   ├── ChatSidebar.tsx # Sidebar with user list
+│   ├── ChatWindow.tsx  # Main chat interface
+│   ├── MessageBubble.tsx # Individual message component
+│   ├── MessageInput.tsx  # Message input component
+│   ├── MessageList.tsx   # Message list component
+│   └── UserAvatar.tsx    # User avatar component with 3D effects
+├── contexts/
+│   └── ChatContext.tsx   # Context for managing chat state
+├── utils/
+│   └── mockData.ts       # Utilities for mock data generation
+├── pages/
+│   ├── Index.tsx         # Main page
+└── App.tsx               # Root application component
+```
 
-This project is built with:
+## Deployment with Vercel
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Push your code to GitHub
+2. Log in to Vercel and create a new project
+3. Import your GitHub repository
+4. Deploy with default settings (no environment variables required)
 
-## How can I deploy this project?
+Live Demo: [Insert Vercel URL]
 
-Simply open [Lovable](https://lovable.dev/projects/5517a8b0-ae6d-49e1-87bd-4d545c61daf5) and click on Share -> Publish.
+## Performance Optimizations
 
-## Can I connect a custom domain to my Lovable project?
+- Memoization of React components to prevent unnecessary re-renders
+- Optimized animations using CSS transforms
+- Efficient message grouping algorithm
+- Throttled scroll events for smooth scrolling performance
 
-Yes, you can!
+## Future Enhancements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Theme switcher (light/dark mode)
+- Emoji picker and GIF support
+- Image and file sharing capabilities
+- Voice and video calling features
+- Notification system
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+
+MIT
